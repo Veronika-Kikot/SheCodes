@@ -75,6 +75,7 @@
         ul{
             padding: 0;
             display: flex;
+        
         }
         li{
             list-style: none;
@@ -219,16 +220,26 @@
             let body = document.querySelector(".content");
             body.innerHTML = newBody;
         }
-        function askUser() {
+        function checkTaste() {
+            let taste = prompt("What taste would you like to buy (Veranda, Verona, House)?");
+             if (taste === "Veranda" || taste === "Verona" || taste === "House") {
+                askUser(taste)
+            } else if (taste === null){
+            }else {
+                alert(`Taste ${taste} doesn't found, try again❗️`);
+                checkTaste();
+            }
+            }
+        function askUser(taste) {
+            
             let name = prompt("What is your name?");
             let email = prompt("What is your email?");
-            let taste = prompt("Wat taste would you like to buy (Veranda, Verona, House)?");
+            return updateBody(`<h1>Thank you ${name}❕</h1><br/><p>Your order is STARBUCKS® ${taste} ♨ all instructions you will recieve by ${email}</p><br/><p class="bottom">2022© All rights reserved</p>`);
+           
             
-            let message = updateBody(`<h1>Thank you ${name}❕</h1><br/><p>Your order is STARBUCKS® ${taste}🫘 all instructions you will recieve by ${email}😁</p><br/><p class="bottom">2022© All rights reserved</p>`);
-            return message;
         }
         let changeButton = document.querySelector("button");
-        changeButton.addEventListener("click", askUser);
+        changeButton.addEventListener("click", checkTaste);
 </script>
 </body>
 </html>
