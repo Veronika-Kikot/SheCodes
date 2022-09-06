@@ -1,0 +1,57 @@
+    body{
+        font-family: 'Poppins', sans-serif;
+    }
+    h1, h2, h3, h4{
+        font-family: 'Lato', sans-serif;
+    }
+    h1{
+        font-size: 45px;
+        font-weight: 700;
+    }
+    h2 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+    h3 {
+        font-size: 18px;
+        font-weight: 500;
+    }
+    a{
+        margin-right: 15px;
+        font-size: 14px;
+    }
+    p{
+        font-size: 14px;
+        font-weight: 200;
+        color: gray;
+    }
+    strong{
+        color: black;
+    }
+    .content{
+        margin: 20% auto;
+        max-width: 70%;
+        padding: 30px;
+        box-shadow: 3px 3px 16px 4px rgba(0, 0, 0, 0.1);
+    }
+    .input{
+        max-width: 70%;
+    }
+    .input-group{
+margin-bottom: 10px;
+    }
+    .weather-info{
+        margin: 70px auto;
+    }
+    .right{
+        text-align: right;
+    }
+    .small-info{
+        text-align: center;
+    }
+    .select.col{
+        box-shadow: 1px 1px 16px 4px rgba(0, 0, 0, 0.1);
+    }
+    .col{
+        padding: 15px;
+    }

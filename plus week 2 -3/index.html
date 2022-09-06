@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+        <div class="content">
+            <div class="input">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Enter city"
+                    aria-label="Recipient's username with two button addons">
+                <input type="submit" value="Search" class="btn btn-primary" />
+                <input type="submit" value="Current" class="btn btn-outline-secondary" />
+            </div>
+            <a href="">Lviv</a>
+            <a href="">Odessa</a>
+            <a href="">Kharkiv</a>
+            <a href="">Dnipro</a>
+            </div>
+
+            <div class="weather-info row">
+                <div class="left col-4">
+                    <h1>⛅️ 25ºC</h1>
+                </div>
+                <div class="col-5">
+                    <p>Chance of precipitation: 14% <br>
+                    Precipitation: 82% <br>
+                    Wind: 5km/h
+                    </p>
+                </div>
+                <div class="right col-3">
+                    <h2>Kyiv</h2>
+                    <p>11:57 Friday, 5<br>
+                        Cloudy
+                    </p>
+                </div>
+            </div>
+            <div class="small-info row">
+                <div class="select col">
+                    <h3>Friday</h3>
+                    <h1>⛅️</h1>
+                    <p><strong>25ºC</strong> / 18ºC</p>
+                </div>
+                <div class="col">
+                    <h3>Saturday</h3>
+                    <h1>☀️</h1>
+                    <p><strong>25ºC</strong> / 18ºC
+                    </p>
+                </div>
+                <div class="col">
+                    <h3>Sunday</h3>
+                    <h1>🌧</h1>
+                    <p><strong>25ºC</strong> / 18ºC
+                    </p>
+                </div>
+                <div class="col">
+                    <h3>Monday</h3>
+                    <h1>⛅️</h1>
+                    <p><strong>25ºC</strong> / 18ºC
+                    </p>
+                </div>
+                <div class="col">
+                    <h3>Tuesday</h3>
+                    <h1>🌤</h1>
+                    <p><strong>25ºC</strong> / 18ºC
+                    </p>
+                </div>
+            </div>
+        </div>
+    <script src="src/index.js"></script>
+</body>
+</html>
+
+let now = new Date();
+console.log(now);
+
+let milsec = now.getMilliseconds();
+console.log(milsec);
+
+let days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
+let day = days[now.getDay()];
+console.log(day);
+
+let date = now.getDate();
+
+let year = now.getFullYear();
+console.log(year);
+
+let months = [
+"Jan",
+"Feb",
+"Mar",
+"Apr",
+"May",
+"Jun",
+"Jul",
+"Aug",
+"Sep",
+"Oct",
+"Nov",
+"Dec"
+];
+let month = months[now.getMonth()];
+console.log(month);
+
+console.log(`Today is ${day}, ${month} ${date}, ${year}`);
+
+function formatDate(current) {
+return current;
+}
+console.log(formatDate(new Date()));
